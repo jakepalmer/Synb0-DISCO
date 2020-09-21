@@ -1,3 +1,13 @@
+# Artemis compatible
+
+This fork was used to generate docker image that is compatible with USyd Artemis HPC. With master synb0 was receiving a `kernel too old` error, so rebuilt with Artemis compatible base image.
+
+To use on Artemis with Singularity, build sif in sandbox:
+
+`singularity pull docker://jpalm070/synb0-artemis:master`
+
+`singularity build --sandbox synb0-artemis_master_sbox.sif synb0-artemis_master.sif`
+
 # synb0_25iso_app
 [Docker Hub](https://hub.docker.com/repository/docker/hansencb/synb0)
 
